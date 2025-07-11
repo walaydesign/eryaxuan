@@ -1649,17 +1649,16 @@ a {
 
 .sideBtn {
   position: fixed;
-  right: 30px;
+  right: 40px;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   z-index: 20;
-  overflow: hidden;
 }
 
 .sideBtn_top {
-  height: 65px;
-  width: 65px;
+  width: 52px;
+  height: 52px;
   margin-top: 20px;
 }
 
@@ -1672,10 +1671,9 @@ a {
 }
 
 .sideBtn ul {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f3973c), to(#ea5719));
-  background: linear-gradient(to top, #f3973c 0%, #ea5719 100%);
-  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   border-radius: 100px;
 }
 
@@ -1725,8 +1723,8 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 65px;
-  height: 75px;
+  width: 52px;
+  height: 55px;
   position: relative;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -1734,7 +1732,7 @@ a {
 }
 
 .sideBtn a img {
-  width: 40px;
+  width: 25px;
   display: block;
   margin: 0 auto;
 }
@@ -1742,16 +1740,22 @@ a {
 .sideBtn a span {
   display: block;
   width: 100%;
-  font-size: 12px;
+  font-size: 8px;
   color: #fff;
   text-align: center;
   margin-top: 5px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  color: #231815;
+  font-family: "Noto Sans TC", sans-serif;
 }
 
 .sideBtn a:hover {
   opacity: 0.6;
+}
+
+.sideBtn a.btn-top img {
+  width: 17px;
 }
 
 @media screen and (max-width: 1500px) {
