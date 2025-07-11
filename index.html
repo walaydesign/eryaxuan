@@ -34,22 +34,24 @@
         <div class="kv">
             <img class="kv_logo" src="./public/img/logo.svg" alt="">
             <div class="kv_text">
-                <div class="kv_text_top d-flex align-items-center justify-content-center">
+                <div class="kv_text_top d-md-flex align-items-center justify-content-center">
                     <ul class="kv_feat kv_text_item d-flex align-items-center">
                         <li>向光建築</li>
                         <li>全戶亮廳</li>
                     </ul>
-                    <div class="kv_distance kv_text_item d-flex align-items-center gap-3">
+                    <div class="kv_distance kv_text_item d-flex align-items-center gap-md-3 gap-2">
                         <h2 class="kv_distance_city">新屋市心</h2>
                         <h2 class="kv_distance_num highlight">5</h2>
                         <h2 class="kv_distance_unit">MIN</h2>
                     </div>
                 </div>
                 <div class="kv_text_bottom d-flex align-items-center justify-content-center">
-                    <div class="kv_room kv_text_item d-flex align-items-center gap-3">
+                    <div class="kv_room kv_text_item d-md-flex align-items-center gap-3">
                         <h2 class="kv_room_name">綠海</h2>
-                        <h2 class="kv_room_num highlight">2-3</h2>
-                        <h2 class="kv_room_unit"><span>房</span></h2>
+                        <div class="d-flex align-items-center gap-md-3 gap-1">
+                            <h2 class="kv_room_num highlight">2-3</h2>
+                            <h2 class="kv_room_unit"><span>房</span></h2>
+                        </div>
                     </div>
                     <div class="kv_price kv_text_item d-flex align-items-center gap-3">
                         <img class="kv_price_num" src="./public/img/428.svg" alt="">
@@ -60,10 +62,12 @@
         </div>
 
         <div class="beauty" id="building">
-            <img src="./public/img/beauty-bg.webp" alt="">
+            <img class="wave beauty_wave" src="./public/img/wave-1.webp" alt="">
+            <img class="beauty_bg d-md-block d-none" src="./public/img/beauty-bg.webp" alt="">
+            <img class="beauty_bg d-md-none" src="./public/img/beauty-bg-m.webp" alt="">
             <div class="beauty_title">
-                <h2 class="title">職人建築精神</h2>
-                <h2 class="title">只為築最安心的家</h2>
+                <h2 class="title title-top">職人建築精神</h2>
+                <h2 class="title title-bottom">只為築最安心的家</h2>
             </div>
             <p class="remark">3D外觀示意圖</p>
         </div>
@@ -89,14 +93,20 @@
                                                 </span>
                                             </a>
                                         </div>
-                                        <h3 class="space_text_en">
+                                        <h3 class="space_text_en d-md-block d-none">
                                             GENEROUSLY<br>
                                             PROPORTIONED SPACE
                                         </h3>
                                     </div>
-                                    <div class="space_top_left_pic space_pic">
-                                        <img src="./public/img/space-1-1.webp" alt="">
-                                        <p class="remark">3D示意圖</p>
+                                    <div class="d-md-block d-flex align-items-end">
+                                        <h3 class="space_text_small space_text_en d-md-none">
+                                            GENEROUSLY<br>
+                                            PROPORTIONED SPACE
+                                        </h3>
+                                        <div class="space_top_left_pic space_pic">
+                                            <img src="./public/img/space-1-1.webp" alt="">
+                                            <p class="remark">3D示意圖</p>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="space_top_right">
@@ -107,20 +117,20 @@
                                 </div>
                             </div>
                             <div class="space_bottom">
-                                <div class="row">
-                                    <div class="col-lg-4">
+                                <div class="row justify-content-end">
+                                    <div class="col-md-4 col-6">
                                         <div class="space_bottom_pic space_pic">
                                             <img src="./public/img/space-1-3.webp" alt="">
                                             <p class="remark">3D示意圖</p>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4">
+                                    <div class="col-md-4 col-6">
                                         <div class="space_bottom_pic space_pic">
                                             <img src="./public/img/space-1-4.webp" alt="">
                                             <p class="remark">3D示意圖</p>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4">
+                                    <div class="col-md-4 col-6">
                                         <div class="space_bottom_pic space_pic">
                                             <img src="./public/img/space-1-5.webp" alt="">
                                             <p class="remark">3D示意圖</p>
@@ -146,14 +156,20 @@
                                                 </span>
                                             </a>
                                         </div>
-                                        <div class="space_text_intro">
+                                        <div class="space_text_intro d-md-flex d-none">
                                             <img src="./public/img/triangle-right-orange.svg" alt="">
                                             <p>臥室皆可放置雙人床</p>
                                         </div>
                                     </div>
-                                    <div class="space_top_left_pic space_pic">
-                                        <img src="./public/img/space-2-1.webp" alt="">
-                                        <p class="remark">3D示意圖</p>
+                                    <div class="d-md-block d-flex align-items-start">
+                                        <div class="space_text_small space_text_intro d-md-none">
+                                            <img src="./public/img/triangle-right-orange.svg" alt="">
+                                            <p>臥室皆可放置雙人床</p>
+                                        </div>
+                                        <div class="space_top_left_pic space_pic">
+                                            <img src="./public/img/space-2-1.webp" alt="">
+                                            <p class="remark">3D示意圖</p>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="space_top_right">
@@ -164,20 +180,20 @@
                                 </div>
                             </div>
                             <div class="space_bottom">
-                                <div class="row">
-                                    <div class="col-lg-4">
+                                <div class="row justify-content-end">
+                                    <div class="col-md-4 col-6">
                                         <div class="space_bottom_pic space_pic">
                                             <img src="./public/img/space-2-3.webp" alt="">
                                             <p class="remark">3D示意圖</p>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4">
+                                    <div class="col-md-4 col-6">
                                         <div class="space_bottom_pic space_pic">
                                             <img src="./public/img/space-2-4.webp" alt="">
                                             <p class="remark">3D示意圖</p>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4">
+                                    <div class="col-md-4 col-6">
                                         <div class="space_bottom_pic space_pic">
                                             <img src="./public/img/space-2-5.webp" alt="">
                                             <p class="remark">3D示意圖</p>
@@ -219,113 +235,123 @@
         </div>
 
         <div class="plan" id="plan">
+            <img class="wave plan_wave-1" src="./public/img/wave-2.webp" alt="">
+            <img class="wave plan_wave-2 d-md-block d-none" src="./public/img/wave-3.webp" alt="">
+            <img class="wave plan_wave-3 d-md-none" src="./public/img/wave-8.webp" alt="">
             <div class="container">
-                <div class="plan_title">
-                    <h2 class="title">多種格局</h2>
-                    <img src="./public/img/triangle-right-blue.svg" alt="">
-                    <h2 class="title"><span class="highlight">滿足</span>生活各種需求</h2>
-                    <h3 class="plan_title_en">PLAN</h3>
+                <div class="plan_title gap-4">
+                    <div class="d-flex align-items-center gap-2">
+                        <h2 class="title">多種格局</h2>
+                        <h3 class="plan_title_en">PLAN</h3>
+                    </div>
+                    <div class="d-flex align-items-center gap-md-4 gap-2">
+                        <img src="./public/img/triangle-right-blue.svg" alt="">
+                        <h2 class="title"><span class="highlight">滿足</span>生活各種需求</h2>
+                    </div>
                 </div>
                 <div class="plan_content">
-                    <img class="plan_content_bg" src="./public/img/layout-frame.svg" alt="">
-                    <div class="swiper-container plan_swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="plan_swiper_main">
-                                    <div class="plan_swiper_text">
-                                        <h4 class="plan_swiper_title">
-                                            <span class="highlight">A1</span>戶型
-                                        </h4>
-                                        <ul class="plan_swiper_list">
-                                            <li class="room"><span class="num">2</span>房<span class="num">2</span>衛浴</li>
-                                            <li>寬闊大陽台<br><span class="highlight">空間好應用</span></li>
-                                        </ul>
+                    <img class="plan_content_bg d-md-block d-none" src="./public/img/layout-frame.svg" alt="">
+                    <img class="plan_content_bg d-md-none" src="./public/img/layout-frame-m.svg" alt="">
+                    <div class="plan_content_main">
+                        <div class="swiper-container plan_swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="plan_swiper_main">
+                                        <div class="plan_swiper_text">
+                                            <h4 class="plan_swiper_title">
+                                                <span class="highlight">A1</span>戶型
+                                            </h4>
+                                            <ul class="plan_swiper_list">
+                                                <li class="room"><span class="num">2</span>房<span class="num">2</span>衛浴</li>
+                                                <li>寬闊大陽台<br><span class="highlight">空間好應用</span></li>
+                                            </ul>
+                                        </div>
+                                        <div class="plan_swiper_pic">
+                                            <img src="./public/img/layout-1.webp" alt="">
+                                        </div>
                                     </div>
-                                    <div class="plan_swiper_pic">
-                                        <img src="./public/img/layout-1.webp" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="plan_swiper_main">
+                                        <div class="plan_swiper_text">
+                                            <h4 class="plan_swiper_title">
+                                                <span class="highlight">A2</span>戶型
+                                            </h4>
+                                            <ul class="plan_swiper_list">
+                                                <li class="room"><span class="num">2</span>房<span class="num">2</span>衛浴</li>
+                                                <li>前後雙陽台</li>
+                                                <li>獨立式廚房</li>
+                                            </ul>
+                                        </div>
+                                        <div class="plan_swiper_pic">
+                                            <img src="./public/img/layout-2.webp" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="plan_swiper_main">
+                                        <div class="plan_swiper_text">
+                                            <h4 class="plan_swiper_title">
+                                                <span class="highlight">A3</span>戶型
+                                            </h4>
+                                            <ul class="plan_swiper_list">
+                                                <li>零走道空間</li>
+                                                <li>開放式客餐廳</li>
+                                            </ul>
+                                        </div>
+                                        <div class="plan_swiper_pic">
+                                            <img src="./public/img/layout-3.webp" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="plan_swiper_main">
+                                        <div class="plan_swiper_text a5">
+                                            <h4 class="plan_swiper_title">
+                                                <span class="highlight">A5</span>戶型
+                                            </h4>
+                                            <ul class="plan_swiper_list">
+                                                <li class="room"><span class="num">3</span>房<span class="num">2</span>衛浴</li>
+                                                <li>玄關落塵區</li>
+                                                <li>前後雙陽台</li>
+                                                <li>獨立式廚房</li>
+                                            </ul>
+                                        </div>
+                                        <div class="plan_swiper_pic">
+                                            <img src="./public/img/layout-4.webp" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="plan_swiper_main">
+                                        <div class="plan_swiper_text a6">
+                                            <h4 class="plan_swiper_title">
+                                                <span class="highlight">A6</span>戶型
+                                            </h4>
+                                            <ul class="plan_swiper_list">
+                                                <li class="room"><span class="num">2</span>房<span class="num">2</span>衛浴</li>
+                                                <li>客廳+1<br><span class="highlight">彈性空間應用</span></li>
+                                                <li>朗闊大陽台</li>
+                                            </ul>
+                                        </div>
+                                        <div class="plan_swiper_pic">
+                                            <img src="./public/img/layout-5.webp" alt="">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="plan_swiper_main">
-                                    <div class="plan_swiper_text">
-                                        <h4 class="plan_swiper_title">
-                                            <span class="highlight">A2</span>戶型
-                                        </h4>
-                                        <ul>
-                                            <li class="room"><span class="num">2</span>房<span class="num">2</span>衛浴</li>
-                                            <li>前後雙陽台</li>
-                                            <li>獨立式廚房</li>
-                                        </ul>
-                                    </div>
-                                    <div class="plan_swiper_pic">
-                                        <img src="./public/img/layout-2.webp" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="plan_swiper_main">
-                                    <div class="plan_swiper_text">
-                                        <h4 class="plan_swiper_title">
-                                            <span class="highlight">A3</span>戶型
-                                        </h4>
-                                        <ul>
-                                            <li>零走道空間</li>
-                                            <li>開放式客餐廳</li>
-                                        </ul>
-                                    </div>
-                                    <div class="plan_swiper_pic">
-                                        <img src="./public/img/layout-3.webp" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="plan_swiper_main">
-                                    <div class="plan_swiper_text">
-                                        <h4 class="plan_swiper_title">
-                                            <span class="highlight">A5</span>戶型
-                                        </h4>
-                                        <ul>
-                                            <li class="room"><span class="num">3</span>房<span class="num">2</span>衛浴</li>
-                                            <li>玄關落塵區</li>
-                                            <li>前後雙陽台</li>
-                                            <li>獨立式廚房</li>
-                                        </ul>
-                                    </div>
-                                    <div class="plan_swiper_pic">
-                                        <img src="./public/img/layout-4.webp" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="plan_swiper_main">
-                                    <div class="plan_swiper_text">
-                                        <h4 class="plan_swiper_title">
-                                            <span class="highlight">A6</span>戶型
-                                        </h4>
-                                        <ul>
-                                            <li class="room"><span class="num">2</span>房<span class="num">2</span>衛浴</li>
-                                            <li>客廳+1<br><span class="highlight">彈性空間應用</span></li>
-                                            <li>朗闊大陽台</li>
-                                        </ul>
-                                    </div>
-                                    <div class="plan_swiper_pic">
-                                        <img src="./public/img/layout-5.webp" alt="">
-                                    </div>
-                                </div>
-                            </div>
+                            <div class="swiper-pagination plan_swiper_pagination"></div>
                         </div>
-                        <div class="swiper-pagination plan_swiper_pagination"></div>
-                    </div>
-                    <div class="plan_content_right">
-                        <img src="./public/img/compass.webp" alt="">
-                        <p>本圖僅供參考,實際依買賣契約書為準。</p>
-                        <div class="plan_content_arrows">
-                            <div class="swiper-button-prev plan_prev">
-                                <svg id="_圖層_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.82 20.71"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px;}</style></defs><g id="_字_x2B_按鈕"><polyline class="cls-1" points="11.11 20 1.41 10.3 11.01 .71"/></g></svg>
-                            </div>
-                            <div class="swiper-button-next plan_next">
-                                <svg id="_圖層_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.82 20.71"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px;}</style></defs><g id="_字_x2B_按鈕"><polyline class="cls-1" points=".71 .71 10.41 10.41 .81 20"/></g></svg>
+                        <div class="plan_content_right">
+                            <img src="./public/img/compass.webp" alt="">
+                            <p>本圖僅供參考,實際依買賣契約書為準。</p>
+                            <div class="plan_content_arrows">
+                                <div class="swiper-button-prev plan_prev">
+                                    <svg id="_圖層_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.82 20.71"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px;}</style></defs><g id="_字_x2B_按鈕"><polyline class="cls-1" points="11.11 20 1.41 10.3 11.01 .71"/></g></svg>
+                                </div>
+                                <div class="swiper-button-next plan_next">
+                                    <svg id="_圖層_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.82 20.71"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px;}</style></defs><g id="_字_x2B_按鈕"><polyline class="cls-1" points=".71 .71 10.41 10.41 .81 20"/></g></svg>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -335,19 +361,25 @@
         </div>
 
         <div class="map" id="map">
+            <img class="wave map_wave d-md-none" src="./public/img/wave-9.webp" alt="">
             <div class="container">
                 <div class="map_title">
                     <ul>
-                        <li><h2 class="title">全齡<span class="highlight">生活圈</span></h2></li>
+                        <li>
+                            <h2 class="title">全齡<span class="highlight">生活圈</span></h2>
+                            <h3 class="title-en d-md-none">Life Function</h3>
+                        </li>
                         <li><h2 class="title">日常所需一步到位</h2></li>
                     </ul>
-                    <h3 class="title-en">Life Function</h3>
+                    <h3 class="title-en d-md-block d-none">Life Function</h3>
                 </div>
                 <img class="w-100" src="./public/img/map.webp" alt="">
             </div>
         </div>
 
         <div class="history">
+            <img class="wave history_wave-1 d-md-block d-none" src="./public/img/wave-4.webp" alt="">
+            <img class="wave history_wave-2 d-md-none" src="./public/img/wave-10.webp" alt="">
             <div class="container">
                 <div class="history_title">
                     <h2 class="title">堡居建設</h2>
@@ -357,13 +389,13 @@
                     </h3>
                 </div>
                 <div class="history_content">
-                    <div class="history_item">
+                    <div class="history_item pb-md-0 pb-2">
                         <p class="history_year">2020</p>
                     </div>
                     <div class="history_item text-top">
                         <p class="history_text">堡居威秀</p>
                         <div class="history_year-wrap">
-                            <p class="history_year">2020</p>
+                            <p class="history_year">2021</p>
                         </div>
                     </div>
                     <div class="history_item text-bottom">
@@ -386,6 +418,8 @@
         </div>
 
         <div class="material">
+            <img class="wave material_wave-1 d-md-block d-none" src="./public/img/wave-5.webp" alt="">
+            <img class="wave material_wave-2 d-md-none" src="./public/img/wave-11.webp" alt="">
             <div class="material_title">
                 <div class="material_title_ch">
                     <h2 class="title">嚴選建材</h2>
@@ -459,6 +493,10 @@
         </div>
 
         <footer class="footer">
+            <img class="wave footer_wave-1 d-md-block d-none" src="./public/img/wave-6.webp" alt="">
+            <img class="wave footer_wave-2 d-md-block d-none" src="./public/img/wave-7.webp" alt="">
+            <img class="wave footer_wave-3 d-md-none" src="./public/img/wave-12.webp" alt="">
+            <img class="wave footer_wave-4 d-md-none" src="./public/img/wave-13.webp" alt="">
             <div class="footer_top">
                 <h2 data-aos="fade-right" data-aos-duration="1000">建案資訊</h2>
                 <div class="footer_inform">
@@ -488,7 +526,7 @@
                         <ul class="footer_inform_list">
                             <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="250">
                                 <p class="footer_inform_title">接待會館</p>
-                                <p class="footer_inform_content">中壢區月桃路559巷1號</p>
+                                <p class="footer_inform_content">桃園市中壢區民族路六段618號</p>
                             </li>
                         </ul>
                     </div>
