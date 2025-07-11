@@ -400,6 +400,7 @@ a {
 
 .beauty {
   position: relative;
+  margin-bottom: 13vw;
 }
 
 .beauty img {
@@ -461,7 +462,7 @@ a {
 }
 
 .space {
-  padding: 13vw 0 13.5vw;
+  padding: 0 0 13.5vw;
 }
 
 .space_top {
@@ -727,6 +728,10 @@ a {
   font-weight: 700;
 }
 
+.plan {
+  margin-bottom: 16vw;
+}
+
 .plan_title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -973,7 +978,6 @@ a {
 }
 
 .map {
-  padding-top: 16vw;
   padding-bottom: 20vw;
 }
 
@@ -1300,7 +1304,6 @@ a {
 .contact {
   padding-bottom: 200px;
   position: relative;
-  padding-top: 270px;
   width: 100%;
   max-width: 950px;
   margin: 0 auto;

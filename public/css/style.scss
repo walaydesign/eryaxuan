@@ -348,6 +348,7 @@ a {
 
 .beauty {
     position: relative;
+    margin-bottom: 13vw;
     img {
         width: 100%;
     }
@@ -393,7 +394,7 @@ a {
 }
 
 .space {
-    padding: 13vw 0 13.5vw;
+    padding: 0 0 13.5vw;
     &_top {
         gap: 15px;
         display: flex;
@@ -592,6 +593,7 @@ a {
 }
 
 .plan {
+    margin-bottom: 16vw;
     &_title {
         display: flex;
         align-items: center;
@@ -770,7 +772,6 @@ a {
 }
 
 .map {
-    padding-top: 16vw;
     padding-bottom: 20vw;
     &_title {
         display: flex;
@@ -1013,11 +1014,9 @@ a {
 
 }
 
-
 .contact {
     padding-bottom: 200px;
     position: relative;
-    padding-top: 270px;
     width: 100%;
     max-width: 950px;
     margin: 0 auto;
