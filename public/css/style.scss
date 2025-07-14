@@ -115,6 +115,7 @@ a {
 
 .wave {
     position: absolute;
+    animation: float-horizontal 3s ease-in-out infinite alternate;
 }
 
 .swiper {
@@ -1008,10 +1009,11 @@ a {
             }
             &_intro {
                 display: flex;
-                align-items: center;
+                align-items: flex-start;
                 gap: 5px;
                 img {
                     width: 6px;
+                    margin-top: 7px;
                 }
                 p {
                     font-size: 14px;
@@ -1100,24 +1102,8 @@ a {
             filter: drop-shadow(0 0 5px rgba(0,0,0,0.3));
         }
         &_right {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            gap: 40px;
-            position: absolute;
-            top: 50%;
-            right: 30px;
-            transform: translateY(-50%);
-            z-index: 10;
             img {
                 width: 46px;
-            }
-            p {
-                writing-mode: vertical-rl;
-                font-size: 13px;
-                color: #5F5F5F;
-                opacity: 0.5;
-                margin: 0;
             }
         }
         &_arrows {
@@ -1125,6 +1111,10 @@ a {
             display: flex;
             flex-direction: column;
             gap: 14px;
+            position: absolute;
+            z-index: 10;
+            top: calc(18% + 390px);
+            right: 30px;
             .plan_next, .plan_prev {
                 border: 1px solid $primary-500;
                 position: static;
@@ -1248,6 +1238,28 @@ a {
                 }
             }
         }
+        &_compass {
+            width: 46px;
+            right: 30px;
+            top: 5%;
+            top: 18%;
+        }
+        &_right {
+            position: absolute;
+            top: 18%;
+            right: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 40px;
+            p {
+                writing-mode: vertical-rl;
+                font-size: 13px;
+                color: #5F5F5F;
+                opacity: 0.5;
+                margin: 0;
+            }
+        }
     }
     .title-en {
         text-align: center;
@@ -1285,8 +1297,7 @@ a {
         &_content {
             margin-bottom: 44px;
             &_right {
-                gap: 25px;
-                right: 19px;
+                padding-top: 10%;
                 img {
                     width: 29px;
                 }
@@ -1297,6 +1308,8 @@ a {
             &_arrows {
                 width: 22px;
                 gap: 9px;
+                right: 19px;
+                top: calc(18% + 330px);
             }
         }
         &_swiper {
@@ -1334,6 +1347,14 @@ a {
                     height: 6px;
                 }
             }
+            &_compass {
+                right: 19px;
+                width: 29px;
+            }
+            &_right {
+                gap: 25px;
+                right: 19px;
+            }
         }        
     }
     @media screen and (max-width: 767px) {
@@ -1356,20 +1377,17 @@ a {
             margin-bottom: 28px;
             &_right {
                 gap: 15px;
-                position: static;
                 transform: none;
                 flex-direction: row;
                 justify-content: flex-end;
                 padding-right: 12px;
                 margin-top: 25px;
+                right: 10px;
+                bottom: 10px;
+                top: inherit;
                 img {
                     width: 27px;
                     order: 2;
-                }
-                p {
-                    writing-mode: horizontal-tb;
-                    font-size: 9px;
-                    order: 1;
                 }
             }
             &_arrows {
@@ -1377,7 +1395,8 @@ a {
                 gap: 5px;
                 position: absolute;
                 right: 12px;
-                bottom: 24%;
+                top: 70.5%;
+                height: fit-content;
                 .plan_next, .plan_prev {
                     width: 11px;
                     height: 11px;
@@ -1387,8 +1406,21 @@ a {
                     }
                 }
             }
+            &_main {
+                height: 100%;
+                display: flex;
+                align-items: center;
+
+            }
         }
         &_swiper {
+            position: static;
+            height: 100%;
+            .swiper-slide {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
             &_main {
                 flex-direction: column;
                 padding: 0;
@@ -1434,14 +1466,32 @@ a {
                 }
             }
             &_pagination {
-                position: static;
                 width: 100% !important;
                 justify-content: center;
                 gap: 3px;
                 margin-top: 30px;
+                left: 0 !important;
+                bottom: 11% !important;
                 .swiper-pagination-bullet {
                     width: 22px;
                     height: 5px;
+                }
+            }
+            &_compass {
+                width: 27px;
+                bottom: 10px;
+                right: 10px;
+                top: inherit;
+                order: 2;
+            }
+            &_right {
+                flex-direction: row;
+                top: 10px;
+                bottom: 10px;
+                p {
+                    writing-mode: horizontal-tb;
+                    font-size: 9px;
+                    order: 1;
                 }
             }
         }
@@ -1540,6 +1590,10 @@ a {
     }
     @media screen and (max-width: 767px) {
         padding-bottom: 55vw;
+        .container {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
         &_title {
             ul {
                 display: block;
@@ -2485,5 +2539,14 @@ a {
                 opacity: 1;
             }
         }
+    }
+}
+
+@keyframes float-horizontal {
+    0% {
+        transform: translateX(-4%);
+    }
+    100% {
+        transform: translateX(4%);
     }
 }

@@ -46,7 +46,7 @@ var swiperPlan = new Swiper(".plan_swiper", {
     prevEl: ".plan_prev",
   },
   speed: 800,
-  allowTouchMove: false,
+  // allowTouchMove: false,
   pagination: {
     el: ".plan_swiper_pagination",
     clickable: true,
