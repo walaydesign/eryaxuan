@@ -292,6 +292,10 @@ a {
     &_price {
         &_num {
             width: 190px;
+            color: $red !important;
+            font-size: 7.5vw;
+            font-weight: 900;
+            font-family: "noto sans TC";
             filter: drop-shadow(0 0 7px #fff);
         }
         &_unit {
@@ -492,6 +496,8 @@ a {
             padding-left: 15px !important;
             &_num {
                 width: 124px;
+                font-size: 70px;
+                padding-bottom: 10px;
             }
             &_unit {
                 font-size: 23px;
