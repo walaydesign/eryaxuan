@@ -333,7 +333,7 @@ a {
 .kv_price_num {
   width: 190px;
   color: #E50012 !important;
-  font-size: 7.5vw;
+  font-size: 100px;
   font-weight: 900;
   font-family: "noto sans TC";
   -webkit-filter: drop-shadow(0 0 7px #fff);
@@ -453,6 +453,8 @@ a {
   }
   .kv_price_num {
     width: 119px;
+    font-size: 70px;
+    padding-bottom: 8px;
   }
   .kv_price_unit {
     font-size: 29px;
