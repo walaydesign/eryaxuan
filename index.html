@@ -484,26 +484,38 @@
                     <h2>預約賞屋</h2>
                     <h3 class="title-en">Contact us</h3>
                 </div>
-                <form class="contact_form" id="contact-form">
+                <form class="contact_form" id="contact-form" 
+            action="https://formsubmit.co/ajax/zhulixdesign@gmail.com"
+            method="POST">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="contact_input">
                                 <label for=""><span>姓</span><span>名</span></label>
-                                <input type="text" id="name" name="name" required>
+                                <input type="text" id="name" name="姓名" required>
                             </div>
                             <div class="contact_input">
                                 <label for=""><span>聯</span><span>絡</span><span>電</span><span>話</span></label>
-                                <input type="phone" id="phone" name="phone" required>
+                                <input type="phone" id="phone" name="聯絡電話" required>
                             </div>
                             <div class="contact_input">
                                 <label for=""><span>居</span><span>住</span><span>地</span><span>區</span></label>
-                                <input type="text" id="area" name="area">
+                                <input type="text" id="area" name="居住地址">
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <textarea class="contact_textarea" placeholder="請輸入您的留言(選填)" name="message" id="message" cols="30"></textarea>
+                            <textarea class="contact_textarea" placeholder="請輸入您的留言(選填)" name="留言" id="message" cols="30"></textarea>
                         </div>
                     </div>
+                    <!-- FormSubmit options -->
+            <input type="hidden" name="_subject" value="爾雅軒預約賞屋" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="true" />
+            <input
+            type="hidden"
+            name="_url"
+            value="https://eryahome.zhuliads.com/"
+          />
+            <input type="hidden" name="_cc" value="h2221201@yahoo.com.tw, zhuliservice@gmail.com" />
                     <input id="submit" type="submit" value="立即預約"/>
                 </form>
             </div>
@@ -597,26 +609,45 @@
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script src="./public/js/index.js?v=2"></script>
     <script>
+      const form = document.querySelector("#contact-form");
 
-(function () {
-  emailjs.init("3j4kNvskrhLw3SIso");
-})();
+      form.addEventListener("submit", async function (e) {
+        e.preventDefault();
 
-document
-  .getElementById("contact-form")
-  .addEventListener("submit", function (event) {
-    event.preventDefault();
+        const button = form.querySelector("#submit");
 
-    emailjs.sendForm("service_eyyx1dp", "template_otsoztp", this).then(
-      () => {
-        alert("感謝您的來信！我們很快就會和您聯繫！");
-        this.reset();
-      },
-      (error) => {
-        alert("寄送失敗，請稍後再試");
-      }
-    );
-  });
+        if (button.disabled) return;
+
+        const originalText = button.value;
+        button.disabled = true;
+        button.value = "送出中...";
+
+        try {
+          const response = await fetch(form.action, {
+            method: "POST",
+            body: new FormData(form),
+            headers: {
+              Accept: "application/json",
+            },
+          });
+
+          const result = await response.json();
+
+          if (response.ok && result.success === "true") {
+            alert("感謝您的來信！我們很快就會和您聯繫！");
+            form.reset();
+          } else {
+            console.error("FormSubmit response:", result);
+            alert("寄送失敗，請稍後再試。");
+          }
+        } catch (error) {
+          console.error("Form submission error:", error);
+          alert("目前無法送出表單，請檢查網路連線後再試。");
+        } finally {
+          button.disabled = false;
+          button.value = originalText;
+        }
+      });
     </script>
     
 </body>
